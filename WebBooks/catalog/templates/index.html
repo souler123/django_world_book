@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+<h1>Main page</h1>
+    <p>Welcome to <em>World of Books</em>, It is very simple website, written in Django.
+    Developed in Python as a case study using PyCharm.</p>
+
+<h2>Dynamic content</h2>
+
+<p>World of books website database contain the following number of records: </p>
+    <ul>
+        <li><strong>Number of books:</strong> {{ num_books }}</li>
+        <li><strong>Number of book instances:</strong> {{ num_instances }}</li>
+        <li><strong>Number of book instances in order:</strong> {{ num_instances_available }}</li>
+        <li><strong>Number of book authors:</strong> {{ num_authors }}</li>
+    </ul>
+<p>Number of visits to this page - {{ num_visits }}</p>
+{% endblock %}
